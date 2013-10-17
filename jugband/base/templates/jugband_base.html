@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html LANG="{{ LANG }}" dir="{{ DIR }}">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>{% block page_title %}JugBand{% endblock %}</title>
+
+    {% block site_css %}
+      {% compress css %}
+      <link href="{{ static('examples/css/main.css') }}" rel="stylesheet">
+      {% endcompress %}
+    {% endblock %}
+  </head>
+  <body data-mobile-cookie="{{ settings.MOBILE_COOKIE }}">
+    {% block content %}{% endblock %}
+
+    <div id="footer">
+    </div>
+
+    {% block site_js %}
+      {% compress js %}
+      <script src="{{ static('examples/js/libs/jquery-1.4.4.min.js') }}"></script>
+      <script src="{{ static('examples/js/libs/jquery.cookie.js') }}"></script>
+      <script src="{{ static('examples/js/init.js') }}"></script>
+      {% endcompress %}
+    {% endblock %}
+  </body>
+</html>

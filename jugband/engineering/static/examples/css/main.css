@@ -1,0 +1,83 @@
+/* An example CSS file that will be minified. */
+body {
+    font-family: sans-serif;
+    background-color: rgb(156,190,255);
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.19, rgb(156,202,255)),
+      color-stop(0.6, rgb(182,242,255))
+    );
+    background-image: -moz-linear-gradient(
+      center bottom,
+      rgb(156,190,255) 19%,
+      rgb(182,212,255) 60%
+    );
+    background-repeat: repeat-x;
+    min-height: 800px;
+    padding-left: 30px;
+}
+h1 {
+    font-family: Helvetica, sans-serif;
+}
+section, p, ul {
+    background-color: rgba(255,255,255,0.3);;
+    color: #111;
+    font-family: Courier, sans-serif;
+    line-height: 1.4;
+    padding: 5px;
+}
+li {
+    margin-left: 30px;
+}
+
+#bleachform {
+    margin: 50px 0;
+}
+#bleachform p {
+    font-size: 80%;
+}
+#bleachform textarea {
+    height: 100px;
+    width: 600px;
+}
+#bleached {
+    background-color: rgba(255, 0, 0, .5);
+    margin: 50px 0;
+}
+#bleached p {
+    background-color: transparent;
+}
+
+
+/* junk from http://bl.ocks.org/mbostock/3885211 */
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+div, p {
+    width: 1200px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
+svg {
+    width: 960px;
+    height: 500px;
+    border: solid 1px #ccc;
+    font: 10px sans-serif;
+    shape-rendering: crispEdges;
+}
+
+

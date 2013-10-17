@@ -1,0 +1,5 @@
+-r ../vendor/src/funfactory/funfactory/requirements/prod.txt
+
+feedparser
+-e git://github.com/LegNeato/remoteobjects.git#egg=remoteobjects
+-e git://github.com/LegNeato/bztools.git#egg=bztools
